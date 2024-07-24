@@ -20,9 +20,9 @@ public class App
 
             page.navigate("http://playwright.dev");
 
-            page.evaluate("console.log(definition)");
+            String definition = (String) page.evaluate("definition");
 
-            System.out.println(page.title());
+            System.out.println(definition);
         }
     }
 }
